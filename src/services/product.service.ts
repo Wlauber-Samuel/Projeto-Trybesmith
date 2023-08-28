@@ -11,7 +11,8 @@ async function create(
   const newProduct = await ProductModel.create(product);
 
   const responseService: ServiceResponse<Product> = {
-    status: 'SUCCESSFUL', data: newProduct.dataValues };
+    status: 'SUCCESSFUL', data: newProduct.dataValues,
+  };
 
   return responseService;
 }
