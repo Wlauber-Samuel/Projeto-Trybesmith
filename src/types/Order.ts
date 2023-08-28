@@ -3,9 +3,3 @@ export type Order = {
   userId: number;
   productId?: number;
 };
-
-export type OrderProduct = {
-  id: number;
-  userId: number;
-  productIds?: { id: number }[];
-};
