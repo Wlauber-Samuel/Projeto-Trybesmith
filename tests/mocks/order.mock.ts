@@ -20,7 +20,16 @@ const returnOrders = [
   }
 ]
 
+const ordersMockBody = {
+  "productIds": [1, 2],
+  "userId": 1
+}
+
+const orderCreate = { id: 10, userId: 1 };
+
 export default {
   returnAllOrders,
   returnOrders,
+  ordersMockBody,
+  orderCreate
 }

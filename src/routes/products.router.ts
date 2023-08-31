@@ -5,8 +5,8 @@ import priceMiddleware from '../middlewares/price.middleware';
 
 const productRouter = Router();
 
-productRouter.post('/products', nameMiddleware, priceMiddleware, productController.create);
+productRouter.post('/', nameMiddleware, priceMiddleware, productController.create);
 
-productRouter.get('/products', productController.findAll);
+productRouter.get('/', productController.findAll);
 
 export default productRouter;
